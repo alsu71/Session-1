@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fon" translatesAutoresizingMaskIntoConstraints="NO" id="Wem-UD-fS0">
+                                <rect key="frame" x="-85" y="0.0" width="585" height="907"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logotip" translatesAutoresizingMaskIntoConstraints="NO" id="8Ti-cE-cUy">
+                                <rect key="frame" x="28" y="98" width="349" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ПРИВЕТ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-ys-eMo">
+                                <rect key="frame" x="106" y="421" width="202" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="32"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgY-7x-Mk1">
+                                <rect key="frame" x="73" y="449" width="286" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Наслаждайся отборочными. Будь внимателен.
+Делай хорошо.</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-lT-Je6">
+                                <rect key="frame" x="0.0" y="745" width="414" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="white"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Еще нет аккаунта? Зарегистрируйтесь">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJj-44-yTL">
+                                <rect key="frame" x="47" y="676" width="321" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <color key="tintColor" name="white"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти в аккаунт">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2KR-uC-rtU" kind="showDetail" id="fL0-e7-BRf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+        <!--Sign View Controller-->
+        <scene sceneID="0Rv-F1-a6v">
+            <objects>
+                <viewController storyboardIdentifier="MyOneScreen" modalPresentationStyle="fullScreen" id="2KR-uC-rtU" customClass="SignViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vab-tG-QJz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kF-p7-Zpo">
+                                <rect key="frame" x="32" y="213" width="184" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logotip" translatesAutoresizingMaskIntoConstraints="NO" id="shF-QY-lw0">
+                                <rect key="frame" x="-47" y="93" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cvetik" translatesAutoresizingMaskIntoConstraints="NO" id="DF5-cU-GjH">
+                                <rect key="frame" x="-59" y="628" width="535" height="224"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="EcK-a7-bo5">
+                                <rect key="frame" x="44" y="459.5" width="326" height="37"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-SS-Pxe">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="33"/>
+                                        <color key="backgroundColor" name="greeen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="5mx-Jd-6ke"/>
+                                        </constraints>
+                                        <color key="textColor" name="Ser"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFH-Sg-eg4">
+                                        <rect key="frame" x="0.0" y="36" width="326" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="DBm-yq-AEb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="skm-im-k1c">
+                                <rect key="frame" x="42" y="361.5" width="326" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-3u-TXI">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="33"/>
+                                        <color key="backgroundColor" name="greeen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="X0L-JS-JXL"/>
+                                        </constraints>
+                                        <color key="textColor" name="Ser"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6A-DM-GeR">
+                                        <rect key="frame" x="0.0" y="33" width="326" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="8Hj-Vb-W3Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e54-rt-ARw">
+                                <rect key="frame" x="42" y="571" width="326" height="38"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <color key="tintColor" name="white"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти ">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="inAction:" destination="2KR-uC-rtU" eventType="touchUpInside" id="XLM-g9-7fs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="plm-wy-vmi"/>
+                        <color key="backgroundColor" name="greeen"/>
+                        <constraints>
+                            <constraint firstItem="e54-rt-ARw" firstAttribute="top" secondItem="EcK-a7-bo5" secondAttribute="bottom" constant="74.5" id="A1h-5x-d1i"/>
+                            <constraint firstItem="3kF-p7-Zpo" firstAttribute="top" secondItem="plm-wy-vmi" secondAttribute="top" constant="169" id="BUk-Wx-C70"/>
+                            <constraint firstItem="3kF-p7-Zpo" firstAttribute="leading" secondItem="plm-wy-vmi" secondAttribute="leading" constant="32" id="HQB-J9-VjM"/>
+                            <constraint firstItem="DF5-cU-GjH" firstAttribute="top" secondItem="e54-rt-ARw" secondAttribute="bottom" constant="19" id="NBy-VR-NWY"/>
+                            <constraint firstItem="e54-rt-ARw" firstAttribute="leading" secondItem="plm-wy-vmi" secondAttribute="leading" constant="42" id="Olc-YL-cFB"/>
+                            <constraint firstItem="plm-wy-vmi" firstAttribute="trailing" secondItem="e54-rt-ARw" secondAttribute="trailing" constant="46" id="PE7-kg-wz5"/>
+                            <constraint firstItem="EcK-a7-bo5" firstAttribute="leading" secondItem="plm-wy-vmi" secondAttribute="leading" constant="44" id="QAK-wK-A2u"/>
+                            <constraint firstItem="EcK-a7-bo5" firstAttribute="top" secondItem="skm-im-k1c" secondAttribute="bottom" constant="64" id="Tvr-1U-D4M"/>
+                            <constraint firstItem="plm-wy-vmi" firstAttribute="trailing" secondItem="3kF-p7-Zpo" secondAttribute="trailing" constant="198" id="Wmh-C5-poy"/>
+                            <constraint firstItem="plm-wy-vmi" firstAttribute="trailing" secondItem="skm-im-k1c" secondAttribute="trailing" constant="46" id="a8o-Ug-uc9"/>
+                            <constraint firstItem="plm-wy-vmi" firstAttribute="trailing" secondItem="EcK-a7-bo5" secondAttribute="trailing" constant="44" id="nue-vD-v3F"/>
+                            <constraint firstItem="skm-im-k1c" firstAttribute="top" secondItem="3kF-p7-Zpo" secondAttribute="bottom" constant="114" id="oU2-yd-pH8"/>
+                            <constraint firstItem="skm-im-k1c" firstAttribute="leading" secondItem="plm-wy-vmi" secondAttribute="leading" constant="42" id="tWo-8y-HqY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputEmail" destination="XkN-3u-TXI" id="O4n-hg-XjX"/>
+                        <outlet property="inputPassword" destination="6rc-SS-Pxe" id="ABc-Tu-v35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baf-mK-QKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788.40579710144937" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fon" width="375" height="812"/>
+        <image name="Logotip" width="375" height="453"/>
+        <image name="cvetik" width="375" height="224"/>
+        <namedColor name="Green">
+            <color red="0.51069694759999995" green="0.60026329759999997" blue="0.57254487279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Ser">
+            <color red="0.74509803921568629" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="greeen">
+            <color red="0.15686274509803921" green="0.20000000000000001" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
